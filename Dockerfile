@@ -18,9 +18,9 @@ ENV INSTALL_DIR "$WORK_BASE"/anaconda3
 # must run with user root
 USER root
 
-# Install utils software
+# Install utility software
 
-RUN apt-get update  && apt-get install -y wget unzip curl bzip2 \
+RUN apt-get update  && apt-get install -y wget unzip curl bzip2 git \
                     && apt-get clean
 
 # create work directory
