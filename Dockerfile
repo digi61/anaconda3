@@ -11,9 +11,9 @@ RUN rm -rf /etc/Dockerfile
 ADD Dockerfile /etc/Dockerfile
 
 # set environment variables
-ENV WORK_BASE /var/rs
+ENV WORK_BASE /var/work
 ENV ANACONDA_PACKAGE Anaconda3-4.2.0-Linux-x86_64.sh
-ENV INSTALL_DIR "$WORK_BASE"/anaconda3
+ENV INSTALL_DIR /var/anaconda3
 
 # must run with user root
 USER root
